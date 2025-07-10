@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+//fbtee
+.enum_manifest.json
+source_strings.json
+src/translations/

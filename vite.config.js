@@ -1,7 +1,12 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import fbteePreset from "@nkzw/babel-preset-fbtee";
+import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [react()],
-})
+export default {
+	plugins: [
+		react({
+			babel: {
+				presets: [fbteePreset],
+			},
+		}),
+	],
+};
